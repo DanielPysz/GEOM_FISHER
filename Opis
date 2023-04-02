@@ -1,0 +1,24 @@
+Raport z zadania 
+Biologia Systemów 
+Daniel Pysz, Jakub Stępka
+
+Zadanie polegało na zaprogramowaniu symulacji doboru naturalnego na podstawie geometrycznego modelu Fishera. 
+Program został wykonany w Google Colab
+
+Właściwości naszego programu:
+1. Dostosowanie (fitness) było mierzone za pomocą zaproponowanego w treści zadania wzoru (np.exp(-(np.linalg.norm(self.features-ideal_f)*self.const*n_pop)))
+2. Populację stanowił DataFrame z poszczególnymi osobnikami
+3. Wydawanie potomstwa na świat zostało ustalone następującymi zasadami:
+  a) Im większe było dostosowanie osobnika w populacji tym większe prawdopodobieństwo na wydanie potomstwa taki osobnik miał
+  b) Osobnik wydawał ilość potomstwa losowaną z rozkładu Poissona
+  c) W momencie generowania nowej populacji (wydawania potomstwa) każdy osobnik potomny był obciążony losowymi mutacjami
+4. Mutageneza została uwarunkowana trzema różnymi wariancjami, które pozwalały ustalić wpływ wariancji na dostosowanie: 0,05; 0,2; 0,5
+5. Zostały sporządzone dwa wykresy:
+  1) Wykres przedstawiający zmiany w dostosowaniach osobników oraz idealny fenotyp 
+  2) Wykres przedstawiający proporcję osobników o danej wariancji mutacji w populacji
+6. W modelu zaimplementowano także dwa scenariusze:
+  1) Zmiany klimatu - stopniowa zmiana idealnego fenotypu o bardzo małą wartość 
+  2) Uderzenie meteorytu - nagła, skokowa zmiana idealnego fenotypu o sporą wartość
+  
+ Wnioski:
+ 1. W oparciu o zaimplementowany model najlepsze dla rozwoju populacji są niewielkie mutacje (cechujące się małą wariancją)
