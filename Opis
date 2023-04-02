@@ -19,6 +19,11 @@ Właściwości naszego programu:
 6. W modelu zaimplementowano także dwa scenariusze:
   1) Zmiany klimatu - stopniowa zmiana idealnego fenotypu o bardzo małą wartość 
   2) Uderzenie meteorytu - nagła, skokowa zmiana idealnego fenotypu o sporą wartość
+7. Zadanie zostało wykonane z użyciem programowania obiektowego. Utworzono dwie klasy:
+  1) Specimen - klasa zawierająca funkcje używane dla poszczególnego osobnika w populacji (np. wydanie potomstwa, obliczenie dostosowania)
+  2) Population - klasa zawierająca funkcje używane do generowania całego kroku populacji (na krok składa się: selekcja, reprodukcja i zmiana środowiska)
   
+Opracowanie statystyczne wyników zostało wykonane za pomocą metody analizy głównych składowych (PCA) 
  Wnioski:
  1. W oparciu o zaimplementowany model najlepsze dla rozwoju populacji są niewielkie mutacje (cechujące się małą wariancją)
+ 2. Propagują się mutacje zwiększające dostosowanie osobnika
